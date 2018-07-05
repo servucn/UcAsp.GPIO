@@ -1,0 +1,238 @@
+﻿
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h2>树莓派GPIO开关量控制</h2>
+<link rel="stylesheet" href="http://cdn.bootcss.com/twitter-bootstrap/2.3.1/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap-switch/4.0.0-alpha.1/css/bootstrap-switch.min.css" />
+<body style="padding: 50px;">
+    <table style="width: 100%" border="1">
+        <tr style="height:25px; line-height: 25px;">
+            <td>
+                <span class="glyphicon glyphicon-cloud" aria-hidden="true"></span>3.3v
+            </td>
+            <td>
+                5v
+            </td>
+        </tr>
+        <tr style="height: 25px;">
+            <td>
+                SDA.1
+            </td>
+            <td>
+                5v
+            </td>
+        </tr>
+        <tr style="height: 25px;">
+            <td>
+                SCL.1
+            </td>
+            <td>
+                GND
+            </td>
+        </tr>
+        <tr style="height: 25px;">
+            <td>
+                <div class="switch" id="mySwitch">
+                    <input id="GPIO7" type="checkbox"  data-id="7" checked data-on-text="GPIO.7" data-off-text="GPIO.7" />
+                </div>
+            </td>
+            <td>
+                TXD
+            </td>
+        </tr>
+        <tr style="height: 25px;">
+            <td>
+                GND
+            </td>
+            <td>
+                RXD
+            </td>
+        </tr>
+        <tr style="height: 25px;">
+            <td>
+                <div class="switch" id="mySwitch">
+                    <input id="GPIO0" type="checkbox" data-id="0" checked data-on-text="GPIO.0" data-off-text="GPIO.0" />
+                </div>
+            </td>
+            <td>
+                <div class="switch" id="mySwitch">
+                    <input id="GPIO1" type="checkbox" data-id="1" checked data-on-text="GPIO.1" data-off-text="GPIO.1" />
+                </div>
+            </td>
+        </tr>
+        <tr style="height: 25px;">
+            <td>
+                <div class="switch" id="mySwitch">
+                    <input id="GPIO2" type="checkbox" data-id="2" checked data-on-text="GPIO.2" data-off-text="GPIO.2" />
+                </div>
+            </td>
+            <td>
+                GND
+            </td>
+        </tr>
+        <tr style="height: 25px;">
+            <td>
+                <div class="switch" id="mySwitch">
+                    <input id="GPIO3" type="checkbox" data-id="3" checked data-on-text="GPIO.3" data-off-text="GPIO.3" />
+                </div>
+            </td>
+            <td>
+                <div class="switch" id="mySwitch">
+                    <input id="GPIO4" type="checkbox" data-id="4" checked data-on-text="GPIO.4" data-off-text="GPIO.4" />
+                </div>
+            </td>
+        </tr>
+        <tr style="height: 25px;">
+            <td>
+                3.3v
+            </td>
+            <td>
+                <div class="switch" id="mySwitch">
+                    <input id="GPIO5" type="checkbox" data-id="5" checked data-on-text="GPIO.5" data-off-text="GPIO.5" />
+                </div>
+            </td>
+        </tr>
+        <tr style="height: 25px;">
+            <td>
+                MOSI
+            </td>
+            <td>
+                GND
+            </td>
+        </tr>
+        <tr style="height: 25px;">
+            <td>
+                MISO
+            </td>
+            <td>
+                <div class="switch" id="mySwitch">
+                    <input id="GPIO6" type="checkbox" data-id="6" checked data-on-text="GPIO.6" data-off-text="GPIO.6" />
+                </div>
+            </td>
+        </tr>
+        <tr style="height: 25px;">
+            <td>
+                SCLK
+            </td>
+            <td>
+                CEO
+            </td>
+        </tr>
+        <tr style="height: 25px;">
+            <td>
+                GND
+            </td>
+            <td>
+                CE1
+            </td>
+        </tr>
+        <tr style="height: 25px;">
+            <td>
+                SDA.0
+            </td>
+            <td>
+                SCL.0
+            </td>
+        </tr>
+        <tr style="height: 25px;">
+            <td>
+                <div class="switch" id="mySwitch">
+                    <input id="GPIO21" type="checkbox" data-id="21" checked data-on-text="GPIO.21" data-off-text="GPIO.21" />
+                </div>
+            </td>
+            <td>
+                GND
+            </td>
+        </tr>
+        <tr style="height: 25px;">
+            <td>
+                <div class="switch" id="mySwitch">
+                    <input id="GPIO22" type="checkbox" data-id="22" checked data-on-text="GPIO.22" data-off-text="GPIO.22" />
+                </div>
+            </td>
+            <td>
+                <div class="switch" id="mySwitch">
+                    <input id="GPIO26" type="checkbox" data-id="26" checked data-on-text="GPIO.26" data-off-text="GPIO.26" />
+                </div>
+            </td>
+        </tr>
+        <tr style="height: 25px;">
+            <td>
+                <div class="switch" id="mySwitch">
+                    <input id="GPIO23" type="checkbox" data-id="23" checked data-on-text="GPIO.23" data-off-text="GPIO.23" />
+                </div>
+            </td>
+            <td>
+                GND
+            </td>
+        </tr>
+        <tr style="height: 25px;">
+            <td>
+                <div class="switch" id="mySwitch">
+                    <input id="GPIO24" type="checkbox" data-id="24" checked data-on-text="GPIO.24" data-off-text="GPIO.24" />
+                </div>
+            </td>
+            <td>
+                <div class="switch" id="mySwitch">
+                    <input id="GPIO27" type="checkbox" data-id="27" checked data-on-text="GPIO.27" data-off-text="GPIO.27" />
+                </div>
+            </td>
+        </tr>
+        <tr style="height: 25px;">
+            <td>
+                <div class="switch" id="mySwitch">
+                    <input id="GPIO25" type="checkbox" data-id="25" checked data-on-text="GPIO.25" data-off-text="GPIO.25" />
+                </div>
+            </td>
+            <td>
+                <div class="switch" id="mySwitch">
+                    <input id="GPIO28" type="checkbox" data-id="28" checked data-on-text="GPIO.28" data-off-text="GPIO.28" />
+                </div>
+            </td>
+        </tr>
+        <tr style="height: 25px;">
+            <td>
+                GND
+            </td>
+            <td>
+                <div class="switch" id="mySwitch">
+                    <input id="GPIO29" type="checkbox" data-id="29" checked data-on-text="GPIO.29" data-off-text="GPIO.29" />
+                </div>
+            </td>
+        </tr>
+    </table>
+
+    <script src="http://cdn.bootcss.com/jquery/1.9.1/jquery.min.js"></script>
+    <script src="http://cdn.bootcss.com/twitter-bootstrap/2.3.1/js/bootstrap.min.js"></script>
+    <script src="https://cdn.bootcss.com/bootstrap-switch/4.0.0-alpha.1/js/bootstrap-switch.min.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            $.ajax({
+                type: 'get',
+                url: "/home/get",
+                success: function (data) {
+                    for (var i in data) {
+                        console.log(data[i]);
+                        $("#GPIO" + i).bootstrapSwitch('state', data[i]);
+                        console.log($("#GPIO" + i).data("id"));
+                    }
+                }
+            }
+            );
+            $('#mySwitch input').bootstrapSwitch({
+                onSwitchChange: function (event, state) {
+
+                    $.post("/home/post/", { gpio: $(this).data("id"), value: state }, function (data) {
+
+                    });
+
+
+
+                }
+            });
+        })
+
+    </script>
+</body>

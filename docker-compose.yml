@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  ucasp.gpio:
+    image: ${DOCKER_REGISTRY}ucaspgpio
+    build:
+      context: .
+      dockerfile: UcAsp.GPIO/Dockerfile
